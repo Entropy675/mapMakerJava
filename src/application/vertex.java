@@ -1,10 +1,10 @@
 package application;
 
-public class vertex
+public class Vertex
 {
 	private double x, y;
 	
-	vertex(double X, double Y)
+	Vertex(double X, double Y)
 	{
 		x = X;
 		y = Y;
@@ -30,20 +30,20 @@ public class vertex
 		this.y = y;
 	}
 	
-	public void set(vertex a)
+	public void set(Vertex a)
 	{
 		this.x = a.x;
 		this.y = a.y;
 	}
 	
-	public void add(vertex a, vertex b)
+	public void add(Vertex a, Vertex b)
 	{
 		
 		this.setX(a.getX() + b.getX());
 		this.setY(a.getY() + b.getY());
 		
 	}	
-	public void sub(vertex a, vertex b)
+	public void sub(Vertex a, Vertex b)
 	{
 		this.setX(a.getX() - b.getX());
 		this.setY(a.getY() - b.getY());
